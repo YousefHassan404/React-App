@@ -1,0 +1,122 @@
+.course-details {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  .course-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .course-title {
+    font-size: 2.5rem;
+    margin: 15px 0;
+    color: #333;
+  }
+
+  .course-instructor,
+  .course-price {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  .current-price {
+    font-weight: bold;
+    color: #27ae60;
+  }
+
+  .original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+  }
+
+  .course-rating {
+    margin: 10px 0;
+    color: #777;
+
+    .bestseller-badge {
+      background: #ffcc00;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  }
+
+  .course-description {
+    font-size: 1rem;
+    color: #444;
+    margin: 20px 0;
+  }
+
+  .course-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; // Allow buttons to wrap on smaller screens
+
+    .course-button {
+      padding: 10px 15px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px;
+
+    .course-title {
+      font-size: 2rem;
+    }
+
+    .course-instructor,
+    .course-price {
+      font-size: 1rem;
+    }
+
+    .course-description {
+      font-size: 0.9rem;
+    }
+
+    .course-button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .course-title {
+      font-size: 1.5rem;
+    }
+
+    .course-instructor,
+    .course-price {
+      font-size: 0.9rem;
+    }
+
+    .course-description {
+      font-size: 0.8rem;
+    }
+
+    .course-button {
+      width: 100%; // Make buttons full-width on small screens
+      padding: 10px;
+    }
+  }
+}

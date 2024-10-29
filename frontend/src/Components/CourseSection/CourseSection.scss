@@ -1,0 +1,105 @@
+.course-section {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.courses-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: transform 0.2s;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.course-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-instructor {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.course-price {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.current-price {
+  color: #005bb5;
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 0.5rem;
+}
+
+.course-rating {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.bestseller-badge {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  margin-left: 0.5rem;
+}
+
+.course-button {
+  background-color: #005bb5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.course-button:hover {
+  background-color: #004494;
+}
+
+@media (max-width: 768px) {
+  .course-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-card {
+    width: 100%;
+  }
+}

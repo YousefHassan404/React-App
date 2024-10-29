@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Yousef Hassan",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "connect-livereload": "^0.6.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "livereload": "^0.9.3",
+    "mongoose": "^8.7.1",
+    "nodemon": "^3.1.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
+  }
+}
